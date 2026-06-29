@@ -1,0 +1,421 @@
+{
+  "episodes": 8,
+  "successes": 8,
+  "success_rate": 1.0,
+  "task": "falling_ring_screwdriver_catch_game_release_from_v441_v461",
+  "display_name": "\u6293\u4e0b\u843d\u73af\u5f62\u87ba\u4e1d\u5200\u4efb\u52a1",
+  "ring_count": 8,
+  "ring_radius": 0.9,
+  "ring_z": 4.2,
+  "angle_min_deg": 0.0,
+  "angle_max_deg": 360.0,
+  "release_jitter_xy": 0.0,
+  "random_yaw_deg": 0.0,
+  "franka_fr3_joint_vel_limit_rad_s": [
+    2.62,
+    2.62,
+    2.62,
+    2.62,
+    5.26,
+    4.18,
+    5.26
+  ],
+  "revo2_active_joint_order": [
+    "thumb_flex",
+    "thumb_aux",
+    "index",
+    "middle",
+    "ring",
+    "pinky"
+  ],
+  "revo2_active_joint_vel_limit_rad_s": [
+    2.53,
+    2.62,
+    2.27,
+    2.27,
+    2.27,
+    2.27
+  ],
+  "object_real_spec": {
+    "length_m": 0.32,
+    "diameter_m": 0.03,
+    "mass_kg": 0.125,
+    "handle_region_m": 0.11,
+    "functional_region_m": 0.21,
+    "handle_color": "green",
+    "functional_color": "red"
+  },
+  "release_policy": "after stable physical grasp, fully open Revo2 and shake wrist/arm to drop old tool before next fall",
+  "refresh_rule": "drop every ring screwdriver once in random order, refresh only after all slots have dropped",
+  "video": "/autodl-fs/data/mingyu/IsaacGym/projects/Dynamic_Gym/src/Dynamic_Gym-sim-env-franka-revo2-aerial-v1/outputs/ring_v490_front110_success_35_145/falling_ring_screwdriver_catch_v490_seed208031.mp4",
+  "summaries": [
+    {
+      "ep": 0,
+      "round_id": 1,
+      "ring_slot": 5,
+      "dropped_slots": [
+        5
+      ],
+      "remaining_slots": [
+        1,
+        2,
+        3,
+        0,
+        6,
+        7,
+        4
+      ],
+      "angle": 1.8325957145940461,
+      "release_xyz": [
+        -0.23293714059226878,
+        0.8693332436601615,
+        4.2
+      ],
+      "release_bias_xy": [
+        0.0,
+        0.0
+      ],
+      "success": true,
+      "first_success_step": 50,
+      "yaw_offset": 1.2,
+      "static_t": -0.06,
+      "static_r": -0.055,
+      "static_z": 0.018,
+      "lead": 0.13,
+      "intercept_z": 1.36,
+      "pre_z": 1.38,
+      "min_handle_palm": 0.05630411580204964,
+      "min_tip": 0.04291887581348419,
+      "min_arm_body_dist": 0.16490359604358673,
+      "strict_palm_steps": 13,
+      "real_pinch_steps": 20,
+      "stable_success_frames": 16,
+      "max_stable_hold": 15,
+      "had_dynamic_fall": true,
+      "max_down_speed": 2.049999952316284,
+      "first_dynamic_step": 13
+    },
+    {
+      "ep": 1,
+      "round_id": 1,
+      "ring_slot": 1,
+      "dropped_slots": [
+        1,
+        5
+      ],
+      "remaining_slots": [
+        2,
+        3,
+        0,
+        6,
+        7,
+        4
+      ],
+      "angle": 0.7853981633974483,
+      "release_xyz": [
+        0.6363961030678928,
+        0.6363961030678927,
+        4.2
+      ],
+      "release_bias_xy": [
+        0.0,
+        0.0
+      ],
+      "success": true,
+      "first_success_step": 72,
+      "yaw_offset": 2.1,
+      "static_t": 0.05,
+      "static_r": -0.025,
+      "static_z": 0.022,
+      "lead": 0.31,
+      "intercept_z": 1.5,
+      "pre_z": 1.62,
+      "min_handle_palm": 0.06619302928447723,
+      "min_tip": 0.044410254806280136,
+      "min_arm_body_dist": 0.09683774411678314,
+      "strict_palm_steps": 4,
+      "real_pinch_steps": 26,
+      "stable_success_frames": 9,
+      "max_stable_hold": 9,
+      "had_dynamic_fall": true,
+      "max_down_speed": 2.2134995460510254,
+      "first_dynamic_step": 13
+    },
+    {
+      "ep": 2,
+      "round_id": 1,
+      "ring_slot": 2,
+      "dropped_slots": [
+        1,
+        2,
+        5
+      ],
+      "remaining_slots": [
+        3,
+        0,
+        6,
+        7,
+        4
+      ],
+      "angle": 0.9599310885968813,
+      "release_xyz": [
+        0.5162187927159415,
+        0.7372368398600926,
+        4.2
+      ],
+      "release_bias_xy": [
+        0.0,
+        0.0
+      ],
+      "success": true,
+      "first_success_step": 67,
+      "yaw_offset": 2.3,
+      "static_t": 0.06,
+      "static_r": 0.0,
+      "static_z": 0.02,
+      "lead": 0.32,
+      "intercept_z": 1.5,
+      "pre_z": 1.6,
+      "min_handle_palm": 0.052175428718328476,
+      "min_tip": 0.046546898782253265,
+      "min_arm_body_dist": 0.1239100843667984,
+      "strict_palm_steps": 9,
+      "real_pinch_steps": 33,
+      "stable_success_frames": 13,
+      "max_stable_hold": 13,
+      "had_dynamic_fall": true,
+      "max_down_speed": 2.3111228942871094,
+      "first_dynamic_step": 13
+    },
+    {
+      "ep": 3,
+      "round_id": 1,
+      "ring_slot": 3,
+      "dropped_slots": [
+        1,
+        2,
+        3,
+        5
+      ],
+      "remaining_slots": [
+        0,
+        6,
+        7,
+        4
+      ],
+      "angle": 1.3089969389957472,
+      "release_xyz": [
+        0.23293714059226867,
+        0.8693332436601615,
+        4.2
+      ],
+      "release_bias_xy": [
+        0.0,
+        0.0
+      ],
+      "success": true,
+      "first_success_step": 50,
+      "yaw_offset": 1.57,
+      "static_t": 0.0,
+      "static_r": -0.055,
+      "static_z": 0.018,
+      "lead": 0.14,
+      "intercept_z": 1.3,
+      "pre_z": 1.34,
+      "min_handle_palm": 0.10955087840557098,
+      "min_tip": 0.09510219842195511,
+      "min_arm_body_dist": 0.18938986957073212,
+      "strict_palm_steps": 0,
+      "real_pinch_steps": 20,
+      "stable_success_frames": 11,
+      "max_stable_hold": 11,
+      "had_dynamic_fall": true,
+      "max_down_speed": 2.049999952316284,
+      "first_dynamic_step": 13
+    },
+    {
+      "ep": 4,
+      "round_id": 1,
+      "ring_slot": 0,
+      "dropped_slots": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ],
+      "remaining_slots": [
+        6,
+        7,
+        4
+      ],
+      "angle": 0.6108652381980153,
+      "release_xyz": [
+        0.5572368398600926,
+        0.5162187927159415,
+        4.2
+      ],
+      "release_bias_xy": [
+        -0.18,
+        0.0
+      ],
+      "success": true,
+      "first_success_step": 74,
+      "yaw_offset": 2.1,
+      "static_t": 0.05,
+      "static_r": -0.025,
+      "static_z": 0.022,
+      "lead": 0.31,
+      "intercept_z": 1.5,
+      "pre_z": 1.62,
+      "min_handle_palm": 0.1018596887588501,
+      "min_tip": 0.06508626788854599,
+      "min_arm_body_dist": 0.10905627906322479,
+      "strict_palm_steps": 0,
+      "real_pinch_steps": 27,
+      "stable_success_frames": 7,
+      "max_stable_hold": 7,
+      "had_dynamic_fall": true,
+      "max_down_speed": 2.3432259559631348,
+      "first_dynamic_step": 13
+    },
+    {
+      "ep": 5,
+      "round_id": 1,
+      "ring_slot": 6,
+      "dropped_slots": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6
+      ],
+      "remaining_slots": [
+        7,
+        4
+      ],
+      "angle": 2.181661564992912,
+      "release_xyz": [
+        -0.5162187927159415,
+        0.7372368398600926,
+        4.2
+      ],
+      "release_bias_xy": [
+        0.0,
+        0.0
+      ],
+      "success": true,
+      "first_success_step": 50,
+      "yaw_offset": 1.1,
+      "static_t": -0.1,
+      "static_r": -0.03,
+      "static_z": 0.02,
+      "lead": 0.17,
+      "intercept_z": 1.36,
+      "pre_z": 1.42,
+      "min_handle_palm": 0.0927886962890625,
+      "min_tip": 0.09197984635829926,
+      "min_arm_body_dist": 0.21490854024887085,
+      "strict_palm_steps": 0,
+      "real_pinch_steps": 21,
+      "stable_success_frames": 20,
+      "max_stable_hold": 20,
+      "had_dynamic_fall": true,
+      "max_down_speed": 2.049999952316284,
+      "first_dynamic_step": 13
+    },
+    {
+      "ep": 6,
+      "round_id": 1,
+      "ring_slot": 7,
+      "dropped_slots": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        6,
+        7
+      ],
+      "remaining_slots": [
+        4
+      ],
+      "angle": 2.530727415391778,
+      "release_xyz": [
+        -0.7372368398600927,
+        0.5162187927159414,
+        4.2
+      ],
+      "release_bias_xy": [
+        0.0,
+        0.0
+      ],
+      "success": true,
+      "first_success_step": 52,
+      "yaw_offset": 0.75,
+      "static_t": -0.105,
+      "static_r": -0.055,
+      "static_z": 0.022,
+      "lead": 0.2,
+      "intercept_z": 1.42,
+      "pre_z": 1.54,
+      "min_handle_palm": 0.1430327594280243,
+      "min_tip": 0.13424405455589294,
+      "min_arm_body_dist": 0.2131502479314804,
+      "strict_palm_steps": 0,
+      "real_pinch_steps": 17,
+      "stable_success_frames": 15,
+      "max_stable_hold": 15,
+      "had_dynamic_fall": true,
+      "max_down_speed": 2.049999952316284,
+      "first_dynamic_step": 13
+    },
+    {
+      "ep": 7,
+      "round_id": 1,
+      "ring_slot": 4,
+      "dropped_slots": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "remaining_slots": [],
+      "angle": 1.5707963267948966,
+      "release_xyz": [
+        5.5109105961630896e-17,
+        0.9,
+        4.2
+      ],
+      "release_bias_xy": [
+        0.0,
+        0.0
+      ],
+      "success": true,
+      "first_success_step": 64,
+      "yaw_offset": 0.8,
+      "static_t": 0.0,
+      "static_r": -0.05,
+      "static_z": 0.018,
+      "lead": 0.14,
+      "intercept_z": 1.3,
+      "pre_z": 1.34,
+      "min_handle_palm": 0.07425760477781296,
+      "min_tip": 0.059945717453956604,
+      "min_arm_body_dist": 0.16819579899311066,
+      "strict_palm_steps": 4,
+      "real_pinch_steps": 16,
+      "stable_success_frames": 14,
+      "max_stable_hold": 11,
+      "had_dynamic_fall": true,
+      "max_down_speed": 2.049999952316284,
+      "first_dynamic_step": 13
+    }
+  ],
+  "asset": "assets/generated/falling_screwdriver_affordance_v01/screwdriver_affordance.urdf"
+}
