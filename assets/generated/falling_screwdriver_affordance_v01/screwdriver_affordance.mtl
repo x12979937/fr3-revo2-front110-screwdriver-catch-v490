@@ -1,0 +1,9 @@
+newmtl blue_handle
+Kd 0.05 0.24 0.95
+Ka 0.02 0.02 0.08
+newmtl dark_shaft
+Kd 0.38 0.38 0.36
+Ka 0.04 0.04 0.04
+newmtl tip_red
+Kd 0.95 0.08 0.04
+Ka 0.08 0.01 0.01
